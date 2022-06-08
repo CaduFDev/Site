@@ -74,9 +74,8 @@ header{
 ******************************/
 .container{
     max-width: 1200px;
-    margin: 30px auto;
-    border: 0px solid white;
-
+    margin: 0px auto;
+    border: 0px solid white;    
     display:grid;
     
     grid-template-areas: 
@@ -101,7 +100,7 @@ img .cadutanga{
 .card{
     width: 300px;
     height: 400px;
-    margin: 20px;
+    margin-top: 140px;
     border-radius: 20px;
     background-color: rgba(248, 248, 248, 0.795);
 
@@ -111,20 +110,6 @@ img .cadutanga{
 
 /*          Conteudos
 ******************************/
-.post{
-    width: 900px;
-    height: 500px;
-   
-    padding: 30px;
-    margin: 40px;
-
-    background-color: #0326108a;
-    border-radius: 10px;
-    
-    grid-area: post;
-    grid-column: post;
-
-}
 
 .socialmidia{
     list-style: none;
@@ -141,6 +126,25 @@ img .cadutanga{
     margin: 5px;
     border-radius: 30px; ;
     background-color: white;    
+}
+
+aside .post {
+    width: 900px;
+    height: 500px;
+   
+    padding: 30px;
+    margin: 40px;
+
+    background-color: #0326108a;
+    border-radius: 10px;
+    
+    grid-area: post;
+    grid-column: post;
+}
+
+aside .post img{
+    width: 50%;
+    align-items: flex-end;
 }
 
 /*          Footer
