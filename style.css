@@ -1,6 +1,14 @@
 /*          Geral
 ******************************/
 @font-face {
+    font-family: questrialFont;
+    src: url("./Fonte/Questrial-Regular.ttf");
+}
+@font-face {
+    font-family: blackCadu;
+    src: url("./Fonte/Blackout.otf");
+}
+@font-face {
     font-family: CenturyGothic;
     src: url("./Fonte/GothicA1-Light.ttf");
 }
@@ -9,7 +17,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: CenturyGothic;
+    font-family: questrialFont;
 }
 
 body {
@@ -31,7 +39,7 @@ header {
 
     align-items: center;
     flex-wrap: wrap;
-
+    
     display: flex;
     justify-content: space-between;
 }
@@ -94,15 +102,16 @@ img {
     width: 100%;
     border-radius: 25px;
     margin: 0%;
-    padding: 2%;
-    
+    padding: 2%;    
 }
 
 
 .container .card p{
     margin: 0%;
-    padding: 3%;
-    text-align: left;            
+    padding: 3%;    
+    text-align: center; 
+    font-size: 300%;
+    font-family: blackCadu;
 }
 
 /*          Card Lateral
@@ -121,7 +130,7 @@ img {
 /*          Conteudos
 ******************************/
 
-.socialmidia {    
+.socialmidia {        
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -134,10 +143,10 @@ img {
     background-repeat: no-repeat;
     background-position:center ;
     background-size: 70%;
+    transition: 1s;
 }
 .socialmidia .socialicon:nth-child(1):hover{
     background-image: url(./Icones/chat-white.png);
-    transition: .5s ;
     background-color: #011601;
     box-shadow: 0px 0px 20px rgb(255, 255, 255);    
 }
@@ -147,10 +156,10 @@ img {
     background-repeat: no-repeat;
     background-position:center ;
     background-size: 70%;
+    transition: 1s;
 }
 .socialmidia .socialicon:nth-child(2):hover{
     background-image: url(./Icones/doc-white.png);
-    transition: .5s ;
     background-color: #011601;
     box-shadow: 0px 0px 20px rgb(255, 255, 255);    
 }
@@ -160,10 +169,10 @@ img {
     background-repeat: no-repeat;
     background-position:center ;
     background-size: 70%;
+    transition: 1s;
 }
 .socialmidia .socialicon:nth-child(3):hover{
     background-image: url(./Icones/Email-white.png);
-    transition: .5s ;
     background-color: #011601;
     box-shadow: 0px 0px 20px rgb(255, 255, 255);    
 }
@@ -173,10 +182,10 @@ img {
     background-repeat: no-repeat;
     background-position:center ;
     background-size: 70%;
+    transition: 1s;
 }
 .socialmidia .socialicon:nth-child(4):hover{
-    background-image: url(./Icones/Git-white.png);    
-    transition: .5s ;
+    background-image: url(./Icones/Git-white.png);
     background-color: #011601;
     box-shadow: 0px 0px 20px rgb(255, 255, 255);    
 }
@@ -258,11 +267,11 @@ aside .post .postDescription{
     right: 40%;
     bottom: 10px;      
     opacity: 98%;
+    transition: 1s;
 }
 
 .postBtn:hover{
-    font-weight: bold;
-    transition: all .5s ease;
+    font-weight: bold;    
     color: rgb(10, 10, 10);
     background-color: #c9e4d4;
     box-shadow: 0px 6px 60px rgba(0, 228, 30, 0.644);
