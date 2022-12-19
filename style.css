@@ -22,8 +22,7 @@
 
 body {
     width: 100%;
-    height: 100%;
-    
+    height: 100%;    
     background: linear-gradient(#031C26, #008037);
 }
 
@@ -54,10 +53,11 @@ header {
 .menu {
     list-style: none;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;    
 }
 
 .menu li a {
+    transition: 1s;
     text-decoration: none;
     color: white;
     display: block;
@@ -76,6 +76,11 @@ header {
 
     display: block;
     margin: 15px;
+}
+.menu li a:active{
+    background-color: white;
+    font-weight: bold;
+    color: #012209fb;
 }
 
 /*          Section
@@ -108,10 +113,11 @@ img {
 
 .container .card p{
     margin: 0%;
-    padding: 3%;    
+    padding: 2%;    
     text-align: center; 
     font-size: 300%;
     font-family: blackCadu;
+    
 }
 
 /*          Card Lateral
