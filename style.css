@@ -77,7 +77,9 @@ header {
     display: block;
     margin: 15px;
 }
-.menu li a:active{
+
+
+.menu li a:focus{
     background-color: white;
     font-weight: bold;
     color: #012209fb;
@@ -98,43 +100,56 @@ header {
         "footer footer footer";
 }
 
-img {
-    width: 100%;    
-    border-radius: 20px;
-}
-
-.caduCard {
-    width: 100%;
-    border-radius: 25px;
-    margin: 0%;
-    padding: 2%;    
-}
-
-
-.container .card p{
-    margin: 0%;
-    padding: 2%;    
-    text-align: center; 
-    font-size: 300%;
-    font-family: blackCadu;
-    
-}
-
 /*          Card Lateral
 ******************************/
 .card {
-    width: 300px;
-    height: 400px;
+    position: relative;
+    width: 100%;
+    height: 15%;
     margin-top: 140px;
     border-radius: 20px;
-    background-color: rgba(248, 248, 248, 0.795);
+    overflow: hidden;
     box-shadow: 0px 5px 60px black;
+    z-index: 1;
     grid-area: card;
     grid-row: card;
 }
 
+.card .poster{
+    position: relative;
+    overflow: hidden;
+}
+
+.card .poster::before{    
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: -180px;
+    background: linear-gradient(0deg, #012912,#05e767 50%, transparent);
+    transition: 0.5s;
+    z-index: 1;
+}
+.card:hover .poster::before{
+    bottom: -0px;
+}
+
+.card .poster img{
+    width: 100%;
+    transition: 0.5s;
+}
+
+.card:hover .poster img{    
+    transform: translateY(-50px);
+    filter: blur(5px);
+}
+
 /*          Conteudos
 ******************************/
+aside .post .postImg img {
+    width: 100%;
+    border-radius: 5%;
+} 
 
 .socialmidia {        
     list-style: none;
