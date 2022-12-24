@@ -65,6 +65,7 @@ header {
     border-radius: 20px;
     margin: 15px;
     align-items: center;
+    font-size: 15px;
 }
 
 .menu li a:hover {
@@ -126,10 +127,11 @@ header {
     width: 100%;
     height: 100%;
     bottom: -180px;
-    background: linear-gradient(0deg, #012912,#05e767 50%, transparent);
+    background: linear-gradient(0deg, #012912,#025526 50%, transparent);
     transition: 0.5s;
     z-index: 1;
 }
+
 .card:hover .poster::before{
     bottom: -0px;
 }
@@ -144,6 +146,93 @@ header {
     filter: blur(5px);
 }
 
+.card .details{
+    position: absolute;
+    bottom: -43%;    
+    left: 0;
+    padding: 5%;
+    width: 100%;
+    z-index: 2;
+    transition: 0.5s;
+}
+
+.card:hover .details{
+    bottom: 50px;
+}
+
+.card .details img{
+    max-width: 150px;
+}
+
+.card .details h3{
+    padding-left: 5px;
+    font-size: 14px;
+    font-size: 13px;    
+    color: #ffffff;
+    font-weight: normal;
+}
+
+.card .details .tags{
+    position: relative;
+    margin: 5px;    
+}
+.card .details .tags span{
+    padding: 2px 5px;
+    background-color: #008037;
+    border-radius: 10%;    
+    font-size: 10px;    
+}
+
+.card .details .tags span:nth-child(1){
+    background: #3d0141;
+    color: white;    
+}
+.card .details .tags span:nth-child(2){
+    background: #6d6d6d;
+    color: white;
+}
+.card .details .tags span:nth-child(3){
+    background: #1b03a3;
+    color: white;
+}
+.card .details .tags span:nth-child(4){
+    background: #dd4b08;
+    color: white;
+}
+.card .details .tags span:nth-child(5){
+    background: #d9f101;
+    color: rgb(0, 0, 0);
+}
+.card .details .infoCard{
+    color: white;
+    margin-top: 10px;
+    font-weight: normal;
+    font-size: 10px;
+}
+.card .details .cast{
+    position: relative;
+}
+.card .details .cast h4{
+    margin-top: 10px;
+    color: #ffffff;
+    font-size: 13px;
+}
+.card .details .cast ul{
+    position: relative;
+    display: flex;
+    margin-top: 10px;
+}
+.card .details .cast ul li{
+    list-style: none;
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+}
+.card .details .cast ul li img{
+    max-width: 100%;
+}
 /*          Conteudos
 ******************************/
 aside .post .postImg img {
