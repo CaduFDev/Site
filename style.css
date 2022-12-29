@@ -24,6 +24,7 @@ body {
     width: 100%;
     height: 100%;    
     background: linear-gradient(#031C26, #008037);
+    background-repeat: no-repeat;
 }
 
 /*          Header
@@ -67,7 +68,6 @@ header {
     align-items: center;
     font-size: 15px;
 }
-
 .menu li a:hover {
     text-decoration: none;
 
@@ -148,7 +148,7 @@ header {
 
 .card .details{
     position: absolute;
-    bottom: -43%;    
+    bottom: -55%;    
     left: 0;
     padding: 5%;
     width: 100%;
@@ -157,7 +157,7 @@ header {
 }
 
 .card:hover .details{
-    bottom: 50px;
+    bottom: 20px;
 }
 
 .card .details img{
@@ -167,7 +167,7 @@ header {
 .card .details h3{
     padding-left: 5px;
     font-size: 14px;
-    font-size: 13px;    
+    font-size: 15px;    
     color: #ffffff;
     font-weight: normal;
 }
@@ -180,7 +180,7 @@ header {
     padding: 2px 5px;
     background-color: #008037;
     border-radius: 10%;    
-    font-size: 10px;    
+    font-size: 10px;        
 }
 
 .card .details .tags span:nth-child(1){
@@ -207,7 +207,7 @@ header {
     color: white;
     margin-top: 10px;
     font-weight: normal;
-    font-size: 10px;
+    font-size: 12px;
 }
 .card .details .cast{
     position: relative;
@@ -215,7 +215,8 @@ header {
 .card .details .cast h4{
     margin-top: 10px;
     color: #ffffff;
-    font-size: 13px;
+    font-size: 14px;
+    font-weight: normal;
 }
 .card .details .cast ul{
     position: relative;
@@ -398,9 +399,9 @@ aside .post .postDescription{
 ******************************/
 footer {
     
-    width: auto;
-    margin: 5%;
-    
+    width: 90%;
+    margin: 5%;;
+
     height: 300px;
     box-shadow: 0px 6px 60px black;
     background-color: rgb(255, 255, 255);
