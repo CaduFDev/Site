@@ -23,7 +23,7 @@
 body {
     width: 100%;
     height: 100%;    
-    background: linear-gradient(#031C26, #008037);
+    background: linear-gradient(#031C26, #012410);
     background-repeat: no-repeat;
 }
 
@@ -180,7 +180,9 @@ header {
     padding: 2px 5px;
     background-color: #008037;
     border-radius: 10%;    
-    font-size: 10px;        
+    font-size: 10px;       
+    
+    font-size: 12px;
 }
 
 .card .details .tags span:nth-child(1){

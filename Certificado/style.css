@@ -23,7 +23,7 @@
 body {    
     width: 100%;
     height: 100%;    
-    background: linear-gradient(#031C26, #008037);
+    background: linear-gradient(#031C26, #012410);
     background-repeat: no-repeat;
 }
 
@@ -126,11 +126,11 @@ section .container{
 
 .container .poster::before{
     content: '';
-    position: absolute;
+    position: absolute;    
     width: 100%;
     height: 100%;
     bottom: -10px;
-    background: linear-gradient(0deg, #012912,#025526 50%, transparent);
+    background: linear-gradient(0deg, #011409,#136e3b 50%, transparent);
     transition: 0.5s;
     z-index: 1;
 }
@@ -179,9 +179,9 @@ section .container{
 
 .container .details .tags span{
     padding: 2px 5px;
-    background-color: #008037;    
-    font-size: 10px;    
-    color: white;    
+    background-color: #378040;    
+    font-size: 10px;        
+    color: rgb(243, 240, 240);    
 }
 
 .container .details .infoCard{
