@@ -1,120 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CamelDev | Início</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="/Fotos/LOGO-CAME ICONE.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadu | Desenvolvedor e Cientista de Dados</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="./Fotos/LOGO-CAME ICONE.ico">
+  <style>
+    @font-face {
+      font-family: CenturyGothic;
+      src: url("./Fonte/GothicA1-Light.ttf");
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: CenturyGothic, sans-serif;
+      font-style: italic;
+      font-weight: bold;
+    }
+
+    body {
+      height: 100vh;
+      background: linear-gradient(to bottom, #0A2540, #163D5C);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 2rem;
+      color: white;
+    }
+
+    .card {
+      position: relative;
+      width: 300px;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0px 5px 60px #0A2540;
+      margin-bottom: 1rem;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card .poster {
+      overflow: hidden;
+    }
+
+    .card .poster img {
+      width: 100%;
+      display: block;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .skill-box {
+      background-color: #1C4C7E;
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #0a2540;
+      font-size: 0.9rem;
+    }
+
+    .descricao {
+      max-width: 600px;
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .social-container {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .social {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0px 0px 20px #0A2540;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+
+    .social:hover {
+      transform: scale(1.1);
+      background-color: #0A2540;
+    }
+
+    .social img {
+      width: 30px;
+    }
+  </style>
 </head>
-
 <body>
-    <header>
-        <a href="/index.html"><img class="logo" src="./Fotos/LOGO-CAME ICONE.ico" alt="logo"></a>
-        <nav>
-            <ul class="menu">                                
-                <li class=""><a href="/Certificado/certificado.html">CERTIFICADOS</a></li>
-                <li class=""><a href="#">DOWNLOADS</a></li>
-            </ul>
-        </nav>
-    </header>
+  <div class="card">
+    <div class="poster">
+      <img src="./Fotos/TheDev.png" alt="Imagem do Desenvolvedor">
+    </div>
+  </div>
 
-    <section class="container">
-        <section class="card">
-            <div class="poster">
-                <img src="./Fotos/TheDev.png" alt="dev1">
-            </div>
-            <div class="details">
-                <img src="Fotos/CAMEL DEV BRANCA.png" alt="logoDetails">
-                <h3>O Desenvolvedo</h3>
-                <div class="tags">
-                    <span>C#</span>
-                    <span>SQLS</span>
-                    <span>CSS</span>
-                    <span>HTML</span>
-                    <span>JS</span>
-                </div>
-                <div class="infoCard">
-                    <p>Sou um desenvolvedor em transição de carreira, buscando uma oportunidade na área para começar a
-                        me destacar e se desenvolver no ambiente tecnológico demonstrando todo meu comprometimento e
-                        seriedade no assunto.</p>
-                </div>
-                <div class="cast">
-                    <h4>Carlos Eduardo</h4>
-                    <ul>
-                        <li><img src="Fotos/2.png" alt=""></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <aside>
-            <ul class="socialmidia">
-                <li class="socialicon" id="divChat"></li>
-                <a class="socialicon" href="Document/Curriculo - 1222.pdf" download=""></a>
-                <li class="socialicon" id="divEmail"></li>
-                <li class="socialicon" id="divGit"></li>
-            </ul>
+  <div class="skills">
+    <div class="skill-box">Cientista de dados</div>
+    <div class="skill-box">Dev</div>
+    <div class="skill-box">Administrador de banco de dados</div>
+    <div class="skill-box">Devops</div>
+  </div>
 
-            <div class="post">
-                <div class="postImg">
-                    <img src="./Fotos/Desenvolvimento 1.png" alt="dev2">
-                </div>
-                <div class="postDescription">
-                    <h3 class="postTitle">Projeto 2</h3>
-                    <p class="postComent"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur iure
-                        accusamus perferendis recusandae. Odio cupiditate architecto ea non ex dolorem libero eaque
-                        dolores iste commodi quos praesentium sit, maiores quam?</p>
-                    <input class="postBtn" type="button" value="Visualizar">
-                </div>
-            </div>
-            <div class="post">
-                <div class="postImg">
-                    <img src="./Fotos/Desenvolvimento 1.png" alt="dev2">
-                </div>
-                <div class="postDescription">
-                    <h3 class="postTitle">Projeto 2</h3>
-                    <p class="postComent"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur iure
-                        accusamus perferendis recusandae. Odio cupiditate architecto ea non ex dolorem libero eaque
-                        dolores iste commodi quos praesentium sit, maiores quam?</p>
-                    <input class="postBtn" type="button" value="Visualizar">
-                </div>
-            </div>
-            <div class="post">
-                <div class="postImg">
-                    <img src="./Fotos/Desenvolvimento 1.png" alt="dev2">
-                </div>
-                <div class="postDescription">
-                    <h3 class="postTitle">Projeto 3</h3>
-                    <p class="postComent"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur iure
-                        accusamus perferendis recusandae. Odio cupiditate architecto ea non ex dolorem libero eaque
-                        dolores iste commodi quos praesentium sit, maiores quam?
-                    </p>
-                    <input class="postBtn" type="button" value="Visualizar">
-                </div>
-            </div>
-            <div class="post">
-                <div class="postImg">
-                    <img src="./Fotos/Desenvolvimento 1.png" alt="dev2">
-                </div>
-                <div class="postDescription">
-                    <h3 class="postTitle">Projeto 4</h3>
-                    <p class="postComent"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur iure
-                        accusamus perferendis recusandae. Odio cupiditate architecto ea non ex dolorem libero eaque
-                        dolores iste commodi quos praesentium sit, maiores quam?</p>
-                    <input class="postBtn" type="button" value="Visualizar">
-                </div>
-            </div>
-        </aside>
-        <footer>
-            <div>
+  <div class="descricao">
+    Sou um desenvolvedor e atualmente focado na área como cientista de dados especializado nas tecnologias Microsoft 365 e a Power plataform. Domino em Excel Avançado, Access, SQL Server e automações de processos com python, power automate combando com vba via webhook's. Entrego soluções profissionais, eficientes e com foco em resultado, entendendo sempre em primeiro lugar a dificuldade na pele para a melhor execução do problema e qualidade na entrega.
+  </div>
 
-            </div>
-        </footer>
-        <script defer src="game-megaSena/js/script.js"></script>
-        <script defer src="/Comandos/script.js"></script>
-    </section>
+  <div class="social-container">
+    <a class="social" href="https://www.instagram.com/cadu_f.amaral/" target="_blank"><img src="./Icones/instagram.png" alt="Instagram"></a>
+    <a class="social" href="https://www.linkedin.com/in/dev-carlosefamaral/" target="_blank"><img src="./Icones/linkedin.png" alt="LinkedIn"></a>
+    <a class="social" href="https://github.com/CadufDev" target="_blank"><img src="./Icones/github.png" alt="GitHub"></a>
+    <a class="social" href="mailto:carlos.amaral@ldc.com"><img src="./Icones/email.png" alt="Email"></a>
+    <a class="social" href="https://wa.me/5514996280970?text=Ol%C3%A1%20Carlos!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar."><img src="./Icones/whatsapp.png" alt="WhatsApp"></a>
+  </div>
 </body>
-
 </html>
